@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<!-- INICIO HEAD-->
+<head>
+<!-- META TAGS -->
+	<title>Arquivo Eletrônico de Leis - Prefeitura Municipal de Leme</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<meta name="author" content="CASTI" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- favicons -->
+	<link rel='shortcut icon' type='image/x-icon' href='https://www.leme.sp.gov.br/assets/frontend/img/favicons/favicon.ico'/>
+	<link rel="shortcut icon" href="https://www.leme.sp.gov.br/assets/frontend/img/favicons/favicon.ico">
+
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+<!-- CSS	 -->
+	<link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/css/dist/font-faces.css">
+	<link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/css/dist/typography.css">
+	<link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/css/dist/default.css">
+	<link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/css/dist/app.css">
+    <link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/css/prefeitura-pags-internas.css">
+	<link rel="stylesheet" href="https://www.leme.sp.gov.br/assets/frontend/slick/slick.css">
+</head>
+<!-- FIM DO HEAD-->
+<!-- INICIO BODY-->
+<body>
+    <header class="header">
+<!-- INICIO DO CABEÇALHO - LOGO ADM E BRASÃO DA CIDADE-->
+        <div class="container">
+            <div class="row menu-row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 nopadding">
+                    <div class="row menu__logotipo-container">
+					   <img class="img-responsive menu__logo-prefa" src="https://www.leme.sp.gov.br/assets/frontend/dist/images/logo-tempo-reconstruir.png" alt="Prefeitura Municipal de Leme">
+                        <div class="col-1"></div>
+                        <a href="https://www.leme.sp.gov.br/"><img class="img-responsive menu__logo-prefa" src="https://www.leme.sp.gov.br/assets/frontend/dist/images/brasao-leme.png" alt="Prefeitura Municipal de Leme"></a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-1 menu-fake-div"></div>
+<!-- ÁREA SOBRE O CABEÇALHO - COM LINK DO PORTAL E PESQUISA -->
+                <div class="col-xl-7 col-lg-8 col-md-6 col-sm-6 nopadding">
+                    <div class="row menu__utility pdbot30">
+                        <div class="menu__input-search">
+                            <form action="https://www.leme.sp.gov.br/busca/post" method="post">
+                                <input type="search" name="dsBusca" placeholder="Procurar no site" aria-label="Procurar no site" required>
+                                    <button type="submit" class="fa fa-search" style="outline: none; border: none; background: none;" tabindex="-1"></button>
+                            </form>
+                        </div>
+                        <a class="menu__link-portal" href="http://www.leme.sp.gov.br/transparencia.php" target="_blank">
+                            <img src="https://www.leme.sp.gov.br/assets/frontend/dist/images/file-search.png" alt="">
+                            Portal da Transparência
+                        </a>
+                        <div class="font-size-controls">
+                            <button id="diminui">A-</button>
+                            <button id="aumenta">A+</button>
+                        </div>
+                    </div>
+                    <div class="row menu__container-menu-sec">
+                        <ul class="menu__secundario col-12" id="menuSecundario">
+						<li ><a href="https://www.leme.sp.gov.br/cidadaos">cidadãos</a></li>
+						<li ><a href="https://www.leme.sp.gov.br/servidores">servidores</a></li>
+						<li ><a href="https://www.leme.sp.gov.br/empresas">empresas</a></li>
+						<li><a href="https://webmail-seguro.com.br/leme.sp.gov.br/" target="_blank">webmail</a></li>
+						<li><a href="https://www.leme.sp.gov.br/imprensa" >imprensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!-- FIM DA ÁREA SOBRE O CABEÇALHO -->
+            </div>
+            <!--- MENUS DO CABEÇAlHO DA PÁGINA --->
+            <div class="row">
+                <ul class="menu__primario" id="meuPrimario">
+                    <li class="active">
+                        <a class="link" href="https://www.leme.sp.gov.br/"><span class="menu__primario-texto">Inicial</span></a>
+                    </li>
+                    <li tabindex="0" class="link link-with-dropdown">
+                        <span class="menu__primario-texto">Prefeitura</span>
+                        <div data-dropdown>
+                            <ul>
+                                <li><a class="link" href="https://www.leme.sp.gov.br/poder-executivo">Poder executivo</a></li>
+                                <li><a class="link" href="https://www.leme.sp.gov.br/prefeitura/gabinete">Gabinete</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li tabindex="0" class="link link-with-dropdown">
+                        <span class="menu__primario-texto">Cidade</span>
+                        <div data-dropdown>
+                            <ul>
+							<li><a class="link" href="https://www.leme.sp.gov.br/dados-gerais">Dados gerais</a></li>
+							<li><a class="link" href="https://www.leme.sp.gov.br/legislacao">Legislação</a></li>
+							<li><a class="link" href="https://www.leme.sp.gov.br/calendario">Calendário municipal</a></li>
+						</ul>
+                        </div>
+                    </li>
+                    <li>
+					   <a class="link" href="https://www.leme.sp.gov.br/secretarias"><span class="menu__primario-texto">Secretarias</span></a>
+                    </li>
+				    <li>
+					   <a class="link" href="https://www.leme.sp.gov.br/turismo"><span class="menu__primario-texto">Turismo</span></a>
+				    </li>
+				    <li>
+					   <a class="link" href="https://www.leme.sp.gov.br/contato"><span class="menu__primario-texto">Contato</span></a>
+				    </li>
+                </ul>
+            </div>
+            <!-- LINKS DE BEM-VINDO, ACESSO RÁPIDO E TELEFONE -->
+            <div class="row menu_info-row">
+                <div class="col-xl-5 col-lg-5 nopadding">
+                    <span class="menu__info">Seja bem-vindo ao nosso portal</span>
+                </div>
+                <div class="col-xl-2 col-lg-3 nopadding">
+                    <a href="tel:1935734000" class="menu__info upper bold">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        &nbsp;
+                        telefone (19) 3573-4000
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-1 p-relat">
+                    <i class="fa fa-long-arrow-down acesso-rapido-seta"></i>
+                </div>
+                <div class="col-xl-1 col-lg-2 nopadding">
+                    <span class="menu__info text-uppercase bold" id="acessoRapidoBotao" tabindex="0">acesso rápido</span>
+                </div>
+            </div>
+            <!-- FIM DA DIV DE LINKS -->
+            <i class="fa fa-bars" id="botao-menu-toggle"></i>
+        </div>
+<!-- FIM CABEÇALHO - LOGO ADM E BRASÃO DA CIDADE -->
+        <!-- DECLARAÇÃO DE LINKS DA ÁREA SOBRE O CABEÇALHO -->
+        <div class="menu-responsivo container menu-hidden" id="menu-responsivo">
+            <div class="row menu-responsivo__row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="menu__input-search">
+                        <input type="text" placeholder="Procurar no site" aria-label="Procurar no site">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <a class="menu__link-portal" href="http://www.leme.sp.gov.br/transparencia.php" target="_blank">
+                        <img src="https://www.leme.sp.gov.br/assets/frontend/dist/images/file-search.png" alt="">
+                        Portal da Transparência
+                    </a>
+                    <ul class="menu__secundario col-12">
+                        <li><a href="https://www.leme.sp.gov.br/cidadaos">cidadãos</a></li>
+                        <li><a href="https://www.leme.sp.gov.br/servidores">servidores</a></li>
+                        <li><a href="https://www.leme.sp.gov.br/empresas">empresas</a></li>
+                        <li><a href="https://webmail-seguro.com.br/leme.sp.gov.br/" target="_blank">webmail</a></li>
+                        <li><a href="http://www.camaraleme.sp.gov.br/site_leme/" target="_blank">câmara</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu__primario" id="menuPrimarioMobile">
+                        <li class="active">
+                            <a href="https://www.leme.sp.gov.br/"><span class="menu__primario-texto">Inicial</span></a>
+                        </li>
+                        <li>
+                            <span class="menu__primario-texto">Prefeitura</span>
+                            <ul class="menu__dropdown-mobile">
+                                <li><a href="https://www.leme.sp.gov.br/poder-executivo">Poder executivo</a></li>
+                                <li><a href="https://www.leme.sp.gov.br/prefeitura/gabinete">Gabinete</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="menu__primario-texto">Cidade</span>
+                            <ul class="menu__dropdown-mobile">
+                                <li><a href="https://www.leme.sp.gov.br/dados-gerais">Dados gerais</a></li>
+				                <li><a href="https://www.leme.sp.gov.br/legislacao">Legislação</a></li>
+				                <li><a href="https://www.leme.sp.gov.br/calendario">Calendário municipal</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.leme.sp.gov.br/secretarias"><span class="menu__primario-texto">Secretarias</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.leme.sp.gov.br/turismo"><span class="menu__primario-texto">Turismo</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.leme.sp.gov.br/contato"><span class="menu__primario-texto">Contato</span></a>
+                        </li>
+                    </ul>
+                    <span class="menu__info upper bold">
+					   <i class="fa fa-phone-square" aria-hidden="true"></i>
+                       &nbsp;
+                        telefone (19) 3573-4000
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DA DECLARAÇÃO DE LINKS -->
+    </header>
+<!-- BANNER-->
+    <section class="banner-secund" aria-role="banner">
+	<div class="container">
+		<div class="banner-secund__texto">
+			Juntos faremos o que deve ser feito!
+		</div>
+	</div>
+    </section>
+<!-- FIM BANNER-->
+<!-- DIV DE LOCALIZAÇÃO NO SITE -->
+    <div class="container breadcrumbs__container">
+        <div class="row">
+            <div class="col-12">
+                <span class="mr-1">Você está aqui</span>
+                <ol id="breadcrumb" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://www.leme.sp.gov.br/">
+                            <span itemprop="name">Home</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="https://www.leme.sp.gov.br/leis">
+                            <span itemprop="name">Arquivo de Leis</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>                    
+                </ol>
+            </div>
+        </div>
+    </div>
+<!-- FIM DA DIV DE LOCALIZAÇÃO --> 
+<!-- INICIO DA DIV ASIDE E MAIN DAS LEIS -->
+    <div class="container mtop100 mbot100">
+        <div class="row resp-pad">
+            <aside class="col-md-3 col-sm-12">
+                <div class="menu-lateral">
+                    <div class="menu-lateral__titulo">Arquivo de Leis</div>
+                        <ul>
+                            <li><a href="/">Últimas Publicações</a></li>
+                            <li><a href="/pesquisa">Pesquisa</a></li>
+                            <li><a href="/decretos">Decretos</a></li>
+                            <li><a href="/complementar">Leis Complementares</a></li>
+                            <li class="active"><a>Leis Ordinárias</a></li>
+                            <li><a href="/organica">Lei Organica</a></li>
+                        </ul>
+                </div>
+            </aside>
+            <main class="col-md-9 col-sm-12">
+                <h1 class="mbot30">Últimas Leis Ordinárias Publicadas</h1>
+                <div class="texto-acessivel">
+<!--################################################################################################################-->
+                    {% for law in laws %}
+                    <ul align="left"><a href="/srv/site/media/{{ law.file_law }}" target="_blank">{{ law }}</a></ul><br>
+                    {% endfor %}
+                    {% if laws.has_other_pages %}
+                    <ul class="pagination">
+                        {% if laws.has_previous %}
+                            <li><a href="?page={{ laws.previous_page_number }}">&laquo;</a></li>
+                        {% else %}
+                            <li class="disabled"><span>&laquo;</span></li>
+                        {% endif %}
+                        {% for i in laws.paginator.page_range %}
+                            {% if laws.number == i %}
+                                <li class="active"><span>{{ i }}<span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                                <li><a href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if laws.has_next %}
+                            <li><a href="?page={{ laws.next_page_number }}">&raquo;</a></li>
+                        {% else %}
+                            <li class="disabled"><span>&raquo;</span></li>
+                        {% endif %}
+                    </ul>
+                    {% endif %}
+<!--################################################################################################################-->
+			    </div>
+            </main>
+        </div>        
+    </div>
+<!-- FIM DA DIV E ASIDE DAS LEIS -->
+<!-- LINKS DO FINAL DA PÁGINA -->
+<footer>
+    <div class="footer__links-section">
+		<nav class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Prefeitura</h6>
+					<ul>
+						<li><a href="https://www.leme.sp.gov.br/poder-executivo">Poder executivo</a></li>
+                        <li><a href="https://www.leme.sp.gov.br/prefeitura/gabinete">Gabinete</a></li>
+                    </ul>
+					<h6 class="secondary-dark-bg">Cidade</h6>
+					<ul>
+						<li><a href="https://www.leme.sp.gov.br/dados-gerais">Dados gerais</a></li>
+						<li><a href="https://www.leme.sp.gov.br/legislacao">Legislação</a></li>
+						<li><a href="https://www.leme.sp.gov.br/calendario">Calendário municipal</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Secretarias</h6>
+					<ul>
+                        <li>
+                            <a href="" aria-label="SECRETARIA DE EDUCAÇÃO">
+                                <abbr title="SECRETARIA DE EDUCAÇÃO">SE</abbr>
+							</a>
+						</li>
+				        <li>
+							<a href="" aria-label="SECRETARIA MUNICIPAL DA SAÚDE"> 
+								<abbr title="SECRETARIA MUNICIPAL DA SAÚDE">SMS</abbr>
+							</a>
+						</li>
+                        <li>
+							<a href="" aria-label="SECRETARIA DE SERVIÇOS MUNICIPAIS"> 
+								<abbr title="SECRETARIA DE SERVIÇOS MUNICIPAIS">SSM</abbr>
+							</a>
+						</li>
+                        <li>
+							<a href="" aria-label="SECRETARIA DO MEIO AMBIENTE"> 
+								<abbr title="SECRETARIA DO MEIO AMBIENTE">SMA</abbr>
+							</a>
+						</li>
+                    </ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Turismo</h6>
+					<ul>
+						<li><a href="https://www.leme.sp.gov.br/turismo/categoria/onde-ficar">Onde ficar</a></li>
+						<li><a href="https://www.leme.sp.gov.br/turismo/categoria/onde-comer">O que comer</a></li>
+						<li><a href="https://www.leme.sp.gov.br/turismo/categoria/o-que-fazer">O que fazer</a></li>
+					</ul>
+					<h6 class="secondary-dark-bg">Atualize-se</h6>
+					<ul>
+						<li><a href="https://www.leme.sp.gov.br/noticias">Novidades</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Cidadãos</h6>
+					<ul>
+                        <li><a  href="https://www.leme.sp.gov.br/contas-publicas">CONTAS PÚBLICAS</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/arcidadao.php">IPTU/ISSQN</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/concursos">CONCURSOS PÚBLICOS </a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/pagina/3">BOLSA FAMÍLIA</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/leis/leis.htm">LEIS MUNICIPAIS</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/protocolo/">PROTOCOLO</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/arcidadao.php">AR CIDADÃO</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/fala-cidadao">FALA CIDADAO</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/empregos">BANCO DE EMPREGOS</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/chamamento-publico">CHAMAMENTO PÚBLICO</a></li>
+                        <li><a target="_blank" href="https://www.leme.sp.gov.br/faq">FAQ</a></li>
+                    </ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Servidores</h6>
+					<ul>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/contracheque.php">CONTRACHEQUE</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/protocolo/">PROTOCOLO</a></li>
+                        <li><a target="_blank" href="http://webmail.leme.sp.gov.br">WEBMAIL</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/pagina/2">SESMT</a></li>
+                        <li><a target="_blank" href="http://sdg.villasoftware.com.br/">SDG</a></li>
+                        <li><a target="_blank" href="http://www.leme.sp.gov.br/portal/portalservidor.php">PORTAL DO SERVIDOR</a></li>
+				    </ul>
+					<h6 class="secondary-dark-bg">Empresas</h6>
+					<ul>
+                        <li><a target="_blank" href="http://www.decaeletronica.com.br/">DECA - Eletrônica</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/empresas-da-cidade">Empresas da Cidade</a></li>
+                        <li><a target="_blank" href="https://leme.itbinet.com/">ITBI - Eletrônico</a></li>
+                        <li><a  href="https://www.leme.sp.gov.br/licitacoes">Licitações</a></li>
+                        <li><a target="_blank" href="https://leme.sigissweb.com/">SIGISSWeb</a></li>
+                    </ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<h6 class="secondary-dark-bg">Contato</h6>
+					<ul>
+						<li><a href="https://www.leme.sp.gov.br/contato">Fale conosco</a></li>
+						<li><a href="https://www.leme.sp.gov.br/ouvidoria">Ouvidoria</a></li>
+					</ul>
+					
+					<div class="rodape__fone-box">
+						<img src="https://www.leme.sp.gov.br/assets/frontend/dist/images/fone-icon.png" alt="">
+						<span>Atendimento por telefone</span>
+					</div>
+					<div class="rodape__fone-number">(19) 3573-4000</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+<!-- FIM LINKS DO FINAL DA PÁGINA -->
+<!-- -->
+    <div class="footer__dados-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<a href="https://www.leme.sp.gov.br/"><img class="img-responsive menu__logo-prefa" src="https://www.leme.sp.gov.br/assets/frontend/dist/images/logo-tempo-reconstruir.png" alt="Brasão da prefeitura de Leme"></a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<h6>Prefeitura Municipal de Leme</h6>
+					<p>
+						Av. 29 de Agosto, 668<br />
+                        Leme - São Paulo <br />
+                        CNPJ 46.362.661/0001-68</p>
+					<p>Copyright &#169. Todos os direitos reservados. </p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<!-- REDES SOCIAIS -->
+					<div class="redes-sociais">
+						<h6>acompanhe a prefeitura nas redes sociais</h6>
+						<a href="https://www.facebook.com/secomdeleme" target="_blank" rel="noopener noreferrer"><img src="https://www.leme.sp.gov.br/assets/frontend/dist/images/fbicon.png" alt="Facebook da prefeitura de Leme"></a>
+                        <a href="https://www.flickr.com/photos/prefeitura_do_municpio_de_leme/" target="_blank"><img src="https://www.leme.sp.gov.br/assets/frontend/img/flickr.svg" alt=""></a>
+					</div>
+					<!-- REDES SOCIAIS -->
+				</div>
+				<div class="col-1 fake-div"></div>
+				<div class="col-lg-1 col-md-6 col-sm-6 col-xs-6">
+					<h6> CASTI </h6>
+                    <p>
+                        Coordenadoria de Atendimento<br />
+                        e Suporte Técnico de Informática</p><br />
+                    <p>Sercretaria da Administração</p><br />
+                    <p>Secretaria de Negócios Juridicos</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!----> 
+</footer>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://www.leme.sp.gov.br/assets/frontend/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script id="addthis">
+	// essa função adiciona o script apenas se realmente existir a div
+	// do addthis na página, para não ficar mostrando um erro chato no console.
+	var addthis = document.querySelector('.addthis');
+	function insertAfter(el, referenceNode) {
+		referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+	}
+	
+	if (addthis) {
+		var script = document.createElement('script');
+		script.setAttribute('src', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59e75ff82876788f');
+		insertAfter(script, document.querySelector('#addthis'));
+	}
+</script>
+<script src="https://www.leme.sp.gov.br/assets/frontend/slick/slick.min.js"></script>
+<script src="https://www.leme.sp.gov.br/assets/frontend/js/dist/default.js"></script>
+</body>
+    <!--FIM DO BODY-->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
